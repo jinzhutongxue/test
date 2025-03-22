@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小喵喵 - 金猪通学游戏平台</title>
+    <meta name="description" content="小喵喵是一款充满欢乐的休闲冒险游戏，与萌萌的小喵喵一起探索奇妙世界！">
+    <link rel="canonical" href="https://jinzhutongxue.com/xiaomiaomiao">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --apple-blue: #0071e3;
+            --apple-gray: #f5f5f7;
+            --apple-dark-gray: #86868b;
+            --apple-black: #1d1d1f;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-gray);
+            color: var(--apple-black);
+        }
+        .game-container {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        .btn-primary {
+            background-color: var(--apple-blue);
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+        .game-iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 600px;
+        }
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px;
+            }
+        }
+        @media (max-width: 480px) {
+            .game-iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/api/placeholder/80/80" alt="金猪通学 Logo" class="w-10 h-10 mr-3">
+                    <span class="text-lg font-semibold">金猪通学</span>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="hover:text-blue-600 transition">首页</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">游戏分类</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">热门推荐</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">关于我们</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">小喵喵冒险之旅</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">与可爱的小喵喵一起探索神秘世界，击败怪物，收集宝藏！</p>
+        </section>
+
+        <section class="game-container p-6 mb-12">
+            <div class="mb-8">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="game-iframe" allowfullscreen></iframe>
+            </div>
+            <div class="text-center mb-6">
+                <button class="btn-primary mx-2">开始游戏</button>
+                <button class="btn-primary mx-2">全屏模式</button>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-4">游戏介绍</h2>
+                <p class="mb-4">《小喵喵》是一款充满挑战性的休闲冒险游戏。在游戏中，玩家将控制可爱的猫咪角色，在神秘的世界中探索，躲避或击败各种怪物，收集宝藏和能量，不断提升自己的能力。</p>
+                <p>游戏画面精美，操作简单直观，但游戏过程充满挑战，需要玩家灵活运用策略和技巧，适合各个年龄段的玩家。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-4">游戏特色</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>可爱的猫咪角色和精美的游戏画面</li>
+                    <li>简单易上手的操作方式</li>
+                    <li>丰富多样的游戏关卡和挑战</li>
+                    <li>多种能力升级和道具系统</li>
+                    <li>随机生成的游戏地图，每次体验都不同</li>
+                    <li>支持PC和移动设备，随时随地畅玩</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-center">游戏攻略</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-3">新手指南</h3>
+                    <p>刚开始游戏时，建议先熟悉基本操作和游戏机制。尝试简单的关卡，学会如何移动、攻击和使用特殊技能。</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-3">角色升级</h3>
+                    <p>随着游戏进行，你可以收集经验值升级角色。每次升级都可以选择不同的能力提升，根据自己的游戏风格选择合适的能力。</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-3">道具收集</h3>
+                    <p>游戏中散落着各种道具和宝箱，这些可以提供临时或永久的能力加成。尽可能收集这些道具，但也要注意避开危险。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-center">玩家评价</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <img src="/api/placeholder/50/50" alt="玩家头像" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h3 class="font-semibold">小王</h3>
+                            <div class="flex text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p>这款游戏太好玩了！画面精美，操作简单，但是玩法很有深度。每次玩都有不同的体验，很容易上瘾。强烈推荐给所有喜欢休闲游戏的朋友！</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <img src="/api/placeholder/50/50" alt="玩家头像" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h3 class="font-semibold">小李</h3>
+                            <div class="flex text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p>作为一款休闲游戏，小喵喵的可玩性非常高。游戏难度设计合理，能够给玩家带来挑战但不会太frustrating。唯一的遗憾是关卡数量有些少，希望未来能够更新更多内容。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">关于我们</h3>
+                    <p class="text-gray-600">金猪通学是一个致力于提供优质在线游戏体验的平台，我们精选各类休闲游戏，让您随时随地享受游戏的乐趣。</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">游戏分类</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-blue-600 transition">休闲游戏</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">冒险游戏</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">策略游戏</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">益智游戏</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">帮助支持</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-blue-600 transition">常见问题</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">游戏攻略</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2v-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9V8h2v1.1c.52-.68 1.13-1.1 2-1.1 1.66 0 3 1.34 3 3v5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t mt-8 pt-6 text-center text-gray-600">
+                <p>&copy; 2025 金猪通学. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
